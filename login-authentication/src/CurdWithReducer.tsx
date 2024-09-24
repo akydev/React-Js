@@ -1,15 +1,16 @@
 import React, { useReducer, useState } from "react";
+import { CountActionKind, IEnum } from "./interface/IEnum";
 // import { IEnum } from "./interface/IEnum";
 
-enum CountActionKind {
-  ADD = "Add",
-  UPDATE = "UPDATE",
-  DELETE = "DELETE",
-}
-export interface IEnum {
-  type: CountActionKind;
-  payload: string;
-}
+// enum CountActionKind {
+//   ADD = "Add",
+//   UPDATE = "UPDATE",
+//   DELETE = "DELETE",
+// }
+// export interface IEnum {
+//   type: CountActionKind;
+//   payload: string;
+// }
 
 export default function CurdWithReducer() {
   const [input, setInput] = useState<string>("");

@@ -1,4 +1,4 @@
-enum CountActionKind {
+export enum CountActionKind {
   ADD = "Add",
   UPDATE = "UPDATE",
   DELETE = "DELETE",
