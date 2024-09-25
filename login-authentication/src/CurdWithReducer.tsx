@@ -14,6 +14,7 @@ import { CountActionKind, IEnum } from "./interface/IEnum";
 
 export default function CurdWithReducer() {
   const [input, setInput] = useState<string>("");
+  // const [inputNum, SetInputNum] = useState<number>(0);
 
   const myReducer = (state: string[], action: IEnum) => {
     switch (action.type) {
@@ -41,6 +42,8 @@ export default function CurdWithReducer() {
   return (
     <div>
       <input type="text" onChange={handleChange} />
+      {/* <input type="number" onChange={handleChange} /> */}
+
       <input type="button" onClick={saveInfo}>
         Save
       </input>

@@ -9,6 +9,7 @@ import FormikWithMUI from "./FormikWithMUI";
 import CurdWithReducer from "./CurdWithReducer";
 import MyinfoWithDataGridDemo from "./MyinfoWithDataGridDemo";
 import MyInfoCommentsApi from "./MyInfoCommentsApi";
+import ParentMain from "./ParentMain";
 
 function App() {
   return (
@@ -31,10 +32,11 @@ function App() {
             }
           />
           <Route path="/Parent" element={<Parent></Parent>} />
+          <Route path="/myCurd" element={<CurdWithReducer />} />
+          <Route path="/myInfo" element={<MyinfoWithDataGridDemo />} />
+          <Route path="/myInfocomments" element={<MyInfoCommentsApi />} />
+          <Route path="/parentMain" element={<ParentMain />} />
         </Routes>
-        <Route path="/myCurd" element={<CurdWithReducer />} />
-        <Route path="/myInfo" element={<MyinfoWithDataGridDemo />} />
-        <Route path="/myInfocomments" element={<MyInfoCommentsApi />} />
       </BrowserRouter>
     </div>
   );
