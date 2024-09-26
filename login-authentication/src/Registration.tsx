@@ -32,7 +32,7 @@ export default function Registration() {
     const { name, value, type, checked } = e.target;
     setData({
       ...data,
-      [name]: type === "Checkbox" ? checked : value,
+      [name]: type === "checkbox" ? checked : value,
     });
   };
 
@@ -54,7 +54,6 @@ export default function Registration() {
         notify("Error");
         // console.log(y);
       });
-
   };
 
   return (
