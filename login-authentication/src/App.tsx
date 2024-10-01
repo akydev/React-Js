@@ -10,6 +10,7 @@ import CurdWithReducer from "./CurdWithReducer";
 import MyinfoWithDataGridDemo from "./MyinfoWithDataGridDemo";
 import MyInfoCommentsApi from "./MyInfoCommentsApi";
 import ParentMain from "./ParentMain";
+import GitHub from "./GitHub";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/myInfo" element={<MyinfoWithDataGridDemo />} />
           <Route path="/myInfocomments" element={<MyInfoCommentsApi />} />
           <Route path="/parentMain" element={<ParentMain />} />
+          <Route path="/githubusers" element={<GitHub />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -15,7 +15,11 @@ export default function Post() {
   return (
     <div>
       {data.map((p: IPost, index: number) => {
-        return <PostIteam d={p}>This is the Javascript.</PostIteam>;
+        return (
+          <PostIteam d={p} i={index}>
+            This is the Javascript.
+          </PostIteam>
+        );
       })}
     </div>
   );
