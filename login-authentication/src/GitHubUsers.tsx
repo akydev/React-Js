@@ -41,9 +41,9 @@ export default function GitHubUsers(git: IGitHubUsersPageProps) {
             {git.hub.login}
           </Typography>
           {/* <Typography variant="h6">{git.hub.followers_url}</Typography> */}
-          <Typography variant="body2">Followers</Typography>
+          {/* <Typography variant="body2">Followers</Typography> */}
           {/* <Typography variant="h6">{git.hub.following_url}</Typography> */}
-          <Typography variant="body2">Following</Typography>
+          {/* <Typography variant="body2">Following</Typography> */}
           <Typography variant="body2" sx={{ color: "text.secondary" }}>
             Lizards are a widespread group of squamate reptiles, with over 6,000
             species, ranging across all continents except Antarctica
