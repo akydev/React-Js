@@ -10,6 +10,7 @@ export default function GitHub() {
   const [data, setData] = useState<IGitHubUsers[]>([]);
 
   useEffect(() => {
+    document.title = "GitHub Demo";
     axios
       .get("https://api.github.com/users")
       .then((res) => {

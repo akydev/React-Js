@@ -37,7 +37,7 @@ function App() {
           <Route path="/myInfo" element={<MyinfoWithDataGridDemo />} />
           <Route path="/myInfocomments" element={<MyInfoCommentsApi />} />
           <Route path="/parentMain" element={<ParentMain />} />
-          <Route path="/githubusers" element={<GitHub />} />
+          <Route path="/github" element={<GitHub />} />
         </Routes>
       </BrowserRouter>
     </div>

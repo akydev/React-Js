@@ -27,7 +27,7 @@ export default function GitHubUsers(git: IGitHubUsersPageProps) {
     <Grid item xs={12} sm={6} md={4}>
       <Card sx={{ maxWidth: 345, mb: 2 }}>
         <CardMedia
-          sx={{ height: 140 }}
+          sx={{ height: 282 }}
           image={git.hub.avatar_url}
           title={git.hub.login}
         />
