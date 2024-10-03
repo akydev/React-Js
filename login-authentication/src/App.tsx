@@ -11,6 +11,10 @@ import MyinfoWithDataGridDemo from "./MyinfoWithDataGridDemo";
 import MyInfoCommentsApi from "./MyInfoCommentsApi";
 import ParentMain from "./ParentMain";
 import GitHub from "./GitHub";
+import GitHubUser from "./GitHubUser";
+import RefAndTheDom from "./RefAndTheDom";
+import RefWithVideoExample from "./RefWithVideoExample";
+import RefVideo from "./RefVideo";
 
 function App() {
   return (
@@ -37,7 +41,14 @@ function App() {
           <Route path="/myInfo" element={<MyinfoWithDataGridDemo />} />
           <Route path="/myInfocomments" element={<MyInfoCommentsApi />} />
           <Route path="/parentMain" element={<ParentMain />} />
+          <Route path="/Ref" element={<RefAndTheDom />} />
+          <Route path="/RefVideo" element={<RefVideo />} />
+
+          <Route path="/RefWithVideo" element={<RefWithVideoExample />} />
+
           <Route path="/github" element={<GitHub />} />
+          <Route path="/github/:username/followers" element={<GitHubUser />} />
+          <Route path="/github/:username/following" element={<GitHubUser />} />
         </Routes>
       </BrowserRouter>
     </div>

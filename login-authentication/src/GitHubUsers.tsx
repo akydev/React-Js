@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Button,
   Card,
@@ -9,6 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import { IGitHubUsers } from "./interface/IGitHubUsers";
+import { useNavigate } from "react-router-dom";
 
 export interface ICommon {
   i: number;
@@ -19,12 +20,15 @@ export interface IGitHubUsersPageProps extends ICommon {
   children: React.ReactNode;
 }
 export default function GitHubUsers(git: IGitHubUsersPageProps) {
-  // const handleViewMore = () => {
-  //   // console.log("View More Information");
-  // };
+  const navigate = useNavigate();
+
+  const handleViewMore = (username: string) => {
+    // console.log("View More Information");
+    navigate(`/github/${username}/followers`);
+  };
 
   return (
-    <Grid item xs={12} sm={6} md={4}>
+    <Grid key={git.hub.id} item xs={12} sm={6} md={4}>
       <Card sx={{ maxWidth: 345, mb: 2 }}>
         <CardMedia
           sx={{ height: 282 }}
@@ -49,13 +53,18 @@ export default function GitHubUsers(git: IGitHubUsersPageProps) {
             species, ranging across all continents except Antarctica
           </Typography>
         </CardContent>
+        <CardContent>
+          <Button size="small" onClick={() => handleViewMore(git.hub.login)}>
+            Followers
+          </Button>
+          <Button size="small" onClick={() => handleViewMore(git.hub.login)}>
+            Following
+          </Button>
+        </CardContent>
         <CardActions style={{ justifyContent: "center" }}>
           <a href={git.hub.html_url} target="_blank">
             <Button size="small">View More</Button>
           </a>
-          {/* <Button size="small" onClick={() => handleClick(value.login)}>
-            Followers
-          </Button> */}
         </CardActions>
 
         {/* Centered View More Button */}
