@@ -15,6 +15,8 @@ import GitHubUser from "./GitHubUser";
 import RefAndTheDom from "./RefAndTheDom";
 import RefWithVideoExample from "./RefWithVideoExample";
 import RefVideo from "./RefVideo";
+import UserApi from "./UserApi";
+import Counter from "./Counter";
 
 function App() {
   return (
@@ -49,6 +51,9 @@ function App() {
           <Route path="/github" element={<GitHub />} />
           <Route path="/github/:username/followers" element={<GitHubUser />} />
           <Route path="/github/:username/following" element={<GitHubUser />} />
+
+          <Route path="/counter" element={<Counter />} />
+          <Route path="/userapi" element={<UserApi />} />
         </Routes>
       </BrowserRouter>
     </div>
